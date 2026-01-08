@@ -10,7 +10,7 @@ import { checkCommand } from './commands/check.js';
 const program = new Command();
 
 program
-  .name('env-guardian')
+  .name('env-guardian-cli')
   .description('Validate, document, and type-check your environment variables')
   .version('1.0.0');
 

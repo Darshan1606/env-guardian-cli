@@ -12,7 +12,7 @@ export const initCommand = new Command('init')
   .option('--no-infer', 'Do not infer schema from existing .env file')
   .option('--force', 'Overwrite existing schema file')
   .action(async (options: { format: string; output: string; infer: boolean; force: boolean }) => {
-    logger.header('env-guardian init');
+    logger.header('env-guardian-cli init');
 
     const format = options.format as 'json' | 'js';
     const outputPath = options.output || (format === 'js' ? 'env.schema.js' : 'env.schema.json');
@@ -58,8 +58,8 @@ export const initCommand = new Command('init')
       logger.newline();
       logger.info('Next steps:');
       logger.dim('  1. Edit the schema file to define your environment variables');
-      logger.dim('  2. Run "npx env-guardian validate" to check your .env');
-      logger.dim('  3. Run "npx env-guardian generate" to create TypeScript types');
+      logger.dim('  2. Run "npx env-guardian-cli validate" to check your .env');
+      logger.dim('  3. Run "npx env-guardian-cli generate" to create TypeScript types');
     } else {
       logger.error(`Failed to create schema: ${result.error}`);
       process.exit(1);

@@ -1,13 +1,14 @@
 {
-  "name": "env-guardian",
+  "name": "env-guardian-cli",
   "version": "1.0.0",
   "description": "Validate, document, and type-check your environment variables",
   "author": "Darshan Tarsariya ",
-  "license": "MIT",
+  "license": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/env-guardian"
+    "url": "https://github.com/Darshan1606/env-guardian-cli"
   },
+  "homepage": "https://github.com/Darshan1606/env-guardian-cli#readme",
   "keywords": [
     "env",
     "environment",
@@ -19,7 +20,7 @@
     "developer-tools"
   ],
   "bin": {
-    "env-guardian": "./dist/cli/index.js"
+    "env-guardian-cli": "./dist/cli/index.js"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

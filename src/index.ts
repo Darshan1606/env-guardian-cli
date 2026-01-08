@@ -1,4 +1,4 @@
-// env-guardian - Validate, document, and type-check your environment variables
+// env-guardian-cli - Validate, document, and type-check your environment variables
 // Programmatic API
 
 // Core types
@@ -53,7 +53,7 @@ import type { ValidationResult } from './types/index.js';
  *
  * @example
  * ```typescript
- * import { validateEnv } from 'env-guardian';
+ * import { validateEnv } from 'env-guardian-cli';
  *
  * const result = validateEnv();
  *
@@ -81,7 +81,7 @@ export function validateEnv(options: {
       errors: [
         {
           variable: '_schema',
-          message: 'No schema file found. Run "npx env-guardian init" to create one.',
+          message: 'No schema file found. Run "npx env-guardian-cli init" to create one.',
           type: 'missing',
         },
       ],
@@ -137,7 +137,7 @@ export function validateEnv(options: {
  *
  * @example
  * ```typescript
- * import { guardEnv } from 'env-guardian';
+ * import { guardEnv } from 'env-guardian-cli';
  *
  * // At app startup
  * const env = guardEnv();

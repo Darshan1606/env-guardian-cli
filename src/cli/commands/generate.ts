@@ -10,14 +10,14 @@ export const generateCommand = new Command('generate')
   .option('-o, --output <path>', 'Output path for TypeScript file', DEFAULT_TYPES_OUTPUT)
   .option('--no-namespace', 'Do not generate NodeJS.ProcessEnv augmentation')
   .action(async (options: { schema?: string; output: string; namespace: boolean }) => {
-    logger.header('env-guardian generate');
+    logger.header('env-guardian-cli generate');
 
     // Find and load schema
     const schemaPath = findSchemaFile(options.schema);
 
     if (!schemaPath) {
       logger.error('No schema file found');
-      logger.info('Run "npx env-guardian init" to create one');
+      logger.info('Run "npx env-guardian-cli init" to create one');
       process.exit(2);
     }
 

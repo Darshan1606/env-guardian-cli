@@ -10,14 +10,14 @@ export const syncCommand = new Command('sync')
   .option('-o, --output <path>', 'Output path for .env.example', DEFAULT_EXAMPLE_OUTPUT)
   .option('--no-comments', 'Do not include comments in output')
   .action(async (options: { schema?: string; output: string; comments: boolean }) => {
-    logger.header('env-guardian sync');
+    logger.header('env-guardian-cli sync');
 
     // Find and load schema
     const schemaPath = findSchemaFile(options.schema);
 
     if (!schemaPath) {
       logger.error('No schema file found');
-      logger.info('Run "npx env-guardian init" to create one');
+      logger.info('Run "npx env-guardian-cli init" to create one');
       process.exit(2);
     }
 

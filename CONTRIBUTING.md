@@ -1,14 +1,14 @@
-# Contributing to env-guardian
+# Contributing to env-guardian-cli
 
-Thank you for your interest in contributing to env-guardian! This document provides guidelines and instructions for contributing.
+Thank you for your interest in contributing to env-guardian-cli! This document provides guidelines and instructions for contributing.
 
 ## Development Setup
 
 1. **Fork and clone the repository**
 
 ```bash
-git clone https://github.com/yourusername/env-guardian.git
-cd env-guardian
+git clone https://github.com/yourusername/env-guardian-cli.git
+cd env-guardian-cli
 ```
 
 2. **Install dependencies**
@@ -32,7 +32,7 @@ npm run build
 ## Project Structure
 
 ```
-env-guardian/
+env-guardian-cli/
 ├── src/
 │   ├── cli/              # CLI implementation
 │   │   ├── commands/     # Individual CLI commands

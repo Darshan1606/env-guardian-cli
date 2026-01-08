@@ -105,7 +105,7 @@ export function createSchemaFile(
   const absolutePath = path.resolve(process.cwd(), outputPath);
 
   const schema = {
-    $schema: 'https://env-guardian.dev/schema.json',
+    $schema: 'https://env-guardian-cli.dev/schema.json',
     variables,
   };
 

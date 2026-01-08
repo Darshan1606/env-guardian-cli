@@ -52,7 +52,7 @@ export const checkCommand = new Command('check')
       } else {
         if (!options.quiet) {
           logger.error('Environment invalid');
-          logger.info('Run "npx env-guardian validate" for details');
+          logger.info('Run "npx env-guardian-cli validate" for details');
         }
         process.exit(1);
       }

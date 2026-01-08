@@ -19,14 +19,14 @@ export const validateCommand = new Command('validate')
       ci?: boolean;
       processEnv?: boolean;
     }) => {
-      logger.header('env-guardian validate');
+      logger.header('env-guardian-cli validate');
 
       // Find and load schema
       const schemaPath = findSchemaFile(options.schema);
 
       if (!schemaPath) {
         logger.error('No schema file found');
-        logger.info('Run "npx env-guardian init" to create one');
+        logger.info('Run "npx env-guardian-cli init" to create one');
         process.exit(2);
       }
 
