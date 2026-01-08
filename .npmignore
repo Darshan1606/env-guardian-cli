@@ -1,0 +1,33 @@
+# Source
+src/
+
+# Tests
+tests/
+*.test.ts
+vitest.config.ts
+coverage/
+
+# Config files
+.eslintrc.cjs
+.prettierrc
+tsconfig.json
+tsup.config.ts
+
+# Git
+.git/
+.gitignore
+
+# GitHub
+.github/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Docs
+CONTRIBUTING.md
+
+# Development
+node_modules/
+*.log
